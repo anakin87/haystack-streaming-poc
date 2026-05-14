@@ -7,23 +7,7 @@ Two ways to try `AsyncPipeline.stream()` from the haystack `streaming-poc` branc
 2. **`pipelines/chat_with_website_streaming/`** — a tiny Hayhooks app exposing the
    new streaming method through an OpenAI-compatible chat-completion endpoint.
 
-## Layout
-
-```
-haystack-streaming-poc/
-├── pyproject.toml
-├── demo.py
-└── pipelines/
-    └── chat_with_website_streaming/
-        ├── chat_with_website.yml
-        └── pipeline_wrapper.py
-```
-
 ## Setup
-
-`pyproject.toml` pins `haystack-ai` to the `streaming-poc` branch of
-`github.com/deepset-ai/haystack` via `[tool.uv.sources]`, so `uv` will fetch
-that branch directly when syncing.
 
 ```bash
 uv sync
