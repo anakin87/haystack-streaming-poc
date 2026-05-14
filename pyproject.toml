@@ -1,0 +1,13 @@
+[project]
+name = "haystack-streaming-poc"
+version = "0.1.0"
+description = "Standalone demo + Hayhooks app showing AsyncPipeline.stream() from the haystack streaming-poc branch."
+requires-python = ">=3.10"
+dependencies = [
+    "hayhooks",
+    "haystack-ai",
+    "trafilatura",
+]
+
+[tool.uv.sources]
+haystack-ai = { git = "https://github.com/deepset-ai/haystack", branch = "streaming-poc" }
